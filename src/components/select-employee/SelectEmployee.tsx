@@ -4,6 +4,7 @@ import { DownOutlined } from '@ant-design/icons';
 import { Typography } from 'antd';
 import SearchContainer from './search-container/SearchContainer';
 import PersonType from './person-type/PersonType';
+import imgCount  from '../../assets/images/Frame 1476.png'
 
 import './selectEmployee.scss';
 
@@ -52,6 +53,9 @@ const SelectEmployee: FC = (props: Props) => {
       <Title level={3}>Select employee dropdown</Title>
       <Dropdown overlay={menu} trigger={['click']}>
         <div className='ant-dropdown-link' onClick={handleIconClick}>
+          <div>
+            <img src = {imgCount} alt=''/>
+          </div>
           <p>Select Employee</p>
           <DownOutlined
             className={clicked ? 'up' : 'down'}
